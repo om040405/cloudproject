@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    font-family: Arial;
+}
+body{ 
+    height: 100vh;
+    background-image: linear-gradient(to top,rgba(0,0,0,0.7)50%,rgba(0,0,0,0.7)50%), url(Desktop.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display :flex;
+    justify-content: space-between;  
+    align-items: center;
+    z-index: 100%;
+}
+.logo{
+    font-size: 29px;
+    color:white;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar a{
+    position:relative;
+    font-size: 21px;
+    font-weight: 600;
+    color:orangered;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.navbar a::before{
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2.5px;
+    background: white;
+    transition: .5s;
+}
+.navbar a:hover::before{
+    width: 100%;
+}
+.content{
+    position: absolute;
+    color: white;
+    margin-top: 350px;
+    left:30%;
+    text-align: center; 
+    letter-spacing: 1px; 
+    line-height: 1.8rem;
+    align-content: center;
+    justify-content: center;
+}
+.h3{
+    color:white;
+}
+.h1{
+    color:orangered;
+    right:10px;
+}
+.paragraph,.order{
+    font-weight: 600;
+    color: white;
+}
+.btn{
+    margin-top: 20px;
+    padding: 8px;
+    font-family:Arial;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: orangered;
+    transition: o.3 s ease-in-out;   
+}
+.btn:hover{
+    background-color: white;
+
+}
